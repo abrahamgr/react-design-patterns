@@ -1,4 +1,4 @@
-import { Children, useState } from "react";
+import { useState } from "react";
 import styled from 'styled-components';
 
 const ModalBackground = styled.div`
