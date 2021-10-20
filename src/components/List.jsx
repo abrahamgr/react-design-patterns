@@ -3,7 +3,7 @@ import { RegularList } from "./RegularList";
 import { NumberedList } from "./NumberedList";
 
 
-const people = [{
+export const people = [{
 	name: 'John Doe',
 	age: 54,
 	hairColor: 'brown',
@@ -20,7 +20,7 @@ const people = [{
 	hobbies: ['biology', 'medicine', 'gymnastics'],
 }];
 
-const products = [{
+export const products = [{
 	name: 'Flat-Screen TV',
 	price: '$300',
 	description: 'Huge LCD screen, a great deal',

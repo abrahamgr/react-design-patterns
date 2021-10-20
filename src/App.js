@@ -5,7 +5,8 @@ import {
   Link
 } from "react-router-dom";
 
-import { Home, List  } from './components'
+import { Home, List, Modal, people, SmallPersonListItem  } from './components'
+import { RegularList } from "./components/RegularList";
 
 const App = () => {
 return (
@@ -17,6 +18,9 @@ return (
           </li>
           <li>
             <Link to="/list">List</Link>
+          </li>
+          <li>
+            <Link to="/modal">Modal</Link>
           </li>
         </ul>
 
@@ -35,6 +39,11 @@ return (
           </Route>
           <Route path="/list">
             <List />
+          </Route>
+          <Route path="/modal">
+            <Modal>
+              <RegularList items={people} resourceName="person" itemComponent={SmallPersonListItem} /> 
+            </Modal>
           </Route>
         </Switch>
       </div>
