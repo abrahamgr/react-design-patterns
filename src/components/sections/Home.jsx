@@ -1,5 +1,5 @@
 
-import { SplitScreen } from './SplitScreen';
+import { SplitScreen } from '../index';
 
 const LeftHandComponent = ({ name }) => {
   return <h1>{name}!</h1>

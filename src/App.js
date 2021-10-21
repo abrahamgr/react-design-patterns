@@ -5,7 +5,12 @@ import {
   Link
 } from "react-router-dom";
 
-import { Home, List, Modal, people, SmallPersonListItem, UserComponent  } from './components'
+import { 
+  Home, List, Modal, people,
+  SmallPersonListItem, UserComponent,
+  Form,
+  Onboarding
+} from './components'
 import { RegularList } from "./components/RegularList";
 
 const App = () => {
@@ -24,6 +29,12 @@ return (
           </li>
           <li>
             <Link to="/user">User</Link>
+          </li>
+          <li>
+            <Link to="/form">Form</Link>
+          </li>
+          <li>
+            <Link to="/onboarding">Onboarding</Link>
           </li>
         </ul>
 
@@ -50,6 +61,12 @@ return (
           </Route>
           <Route path="/user">
             <UserComponent />
+          </Route>
+          <Route path="/form">
+            <Form />
+          </Route>
+          <Route path="/onboarding">
+            <Onboarding />
           </Route>
         </Switch>
       </div>

@@ -1,6 +1,4 @@
-import { SmallPersonListItem, LargePersonListItem, SmallProductListItem, LargeProductListItem } from "./index";
-import { RegularList } from "./RegularList";
-import { NumberedList } from "./NumberedList";
+import { SmallPersonListItem, LargePersonListItem, SmallProductListItem, LargeProductListItem, RegularList, NumberedList } from "../index";
 
 
 export const people = [{
