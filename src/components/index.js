@@ -18,7 +18,7 @@ export * from './withUser';
 export * from './withEditableUser';
 export * from './withEditableResource';
 export * from './UserInfoForm';
-
+export * from './UserInfoHook'
 /**
  * Order of exports are important
 */

@@ -9,7 +9,8 @@ import {
   Home, List, Modal, people,
   SmallPersonListItem, UserComponent,
   Form,
-  Onboarding
+  Onboarding,
+  Hooks
 } from './components'
 import { RegularList } from "./components/RegularList";
 import { HOC } from "./components/sections/HOC";
@@ -39,6 +40,9 @@ return (
           </li>
           <li>
             <Link to="/hoc">High Order Components</Link>
+          </li>
+          <li>
+            <Link to="/hooks">Hooks</Link>
           </li>
         </ul>
 
@@ -74,6 +78,9 @@ return (
           </Route>
           <Route path="/hoc">
             <HOC />
+          </Route>
+          <Route path="/hooks">
+            <Hooks />
           </Route>
         </Switch>
       </div>
