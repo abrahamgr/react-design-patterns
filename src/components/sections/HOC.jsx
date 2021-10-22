@@ -1,4 +1,4 @@
-import { printProps, UserInfo, UserInfoForm, withUser } from "..";
+import { printProps, UserInfo, UserInfoForm, UserInfoFormGeneric, withUser } from "..";
 
 export const HOC = () => {
 
@@ -23,6 +23,8 @@ export const HOC = () => {
             <WrappedUser />
             <p>Wrapped with get data</p>
             <UserInfoForm />
+            <p>Wrapped with get data, with generic component</p>
+            <UserInfoFormGeneric />
         </>
     );
 };

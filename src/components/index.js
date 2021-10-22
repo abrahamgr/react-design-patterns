@@ -16,4 +16,9 @@ export * from './OnboardingFlow';
 export * from './printProps';
 export * from './withUser';
 export * from './withEditableUser';
+export * from './withEditableResource';
 export * from './UserInfoForm';
+
+/**
+ * Order of exports are important
+*/
