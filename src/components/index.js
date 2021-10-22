@@ -19,6 +19,11 @@ export * from './withEditableUser';
 export * from './withEditableResource';
 export * from './UserInfoForm';
 export * from './UserInfoHook'
+export * from './RecursiveComponent';
+export * from './Composition';
+export * from './partiallyApply';
+
+
 /**
  * Order of exports are important
 */

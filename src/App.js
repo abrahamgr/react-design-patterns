@@ -10,40 +10,51 @@ import {
   SmallPersonListItem, UserComponent,
   Form,
   Onboarding,
-  Hooks
+  Hooks,
+  Recursive
 } from './components'
 import { RegularList } from "./components/RegularList";
 import { HOC } from "./components/sections/HOC";
+
+import styled from "styled-components";
+
+const LI = styled.li`
+  display: inline-block;
+  margin-right: 5px;
+`;
 
 const App = () => {
 return (
     <Router>
       <div>
         <ul>
-          <li>
+          <LI>
             <Link to="/">Home</Link>
-          </li>
-          <li>
+          </LI>
+          <LI>
             <Link to="/list">List</Link>
-          </li>
-          <li>
+          </LI>
+          <LI>
             <Link to="/modal">Modal</Link>
-          </li>
-          <li>
+          </LI>
+          <LI>
             <Link to="/user">User</Link>
-          </li>
-          <li>
+          </LI>
+          <LI>
             <Link to="/form">Form</Link>
-          </li>
-          <li>
+          </LI>
+          <LI>
             <Link to="/onboarding">Onboarding</Link>
-          </li>
-          <li>
+          </LI>
+          <LI>
             <Link to="/hoc">High Order Components</Link>
-          </li>
-          <li>
+          </LI>
+          <LI>
             <Link to="/hooks">Hooks</Link>
-          </li>
+          </LI>
+          <LI>
+            <Link to="/recursive">Recursive</Link>
+          </LI>
         </ul>
 
         <hr />
@@ -81,6 +92,9 @@ return (
           </Route>
           <Route path="/hooks">
             <Hooks />
+          </Route>
+          <Route path="/recursive">
+            <Recursive />
           </Route>
         </Switch>
       </div>
