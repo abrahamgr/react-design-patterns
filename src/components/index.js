@@ -13,3 +13,7 @@ export * from './DataSource';
 export * from './NumberedList';
 export * from './RegularList';
 export * from './OnboardingFlow';
+export * from './printProps';
+export * from './withUser';
+export * from './withEditableUser';
+export * from './UserInfoForm';

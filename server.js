@@ -66,9 +66,10 @@ app.post('/users/:id', (req, res) => {
 	const { id } = req.params;
 	const { user: updatedUser } = req.body;
 
-	users = users.map(user => user.id === id ? updatedUser : user);
+	// update users array
+	users = users.map(user => user.id === Number(id) ? updatedUser : user);
 
-	res.json(users.find(user => user.id === id));
+	res.json(users.find(user => user.id === Number(id)));
 });
 
 app.get('/users', (req, res) => {

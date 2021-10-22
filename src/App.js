@@ -12,6 +12,7 @@ import {
   Onboarding
 } from './components'
 import { RegularList } from "./components/RegularList";
+import { HOC } from "./components/sections/HOC";
 
 const App = () => {
 return (
@@ -35,6 +36,9 @@ return (
           </li>
           <li>
             <Link to="/onboarding">Onboarding</Link>
+          </li>
+          <li>
+            <Link to="/hoc">High Order Components</Link>
           </li>
         </ul>
 
@@ -67,6 +71,9 @@ return (
           </Route>
           <Route path="/onboarding">
             <Onboarding />
+          </Route>
+          <Route path="/hoc">
+            <HOC />
           </Route>
         </Switch>
       </div>
